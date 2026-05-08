@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; }
-        body { background-color: #1a202c; display: grid; gap: 40px; grid-template-columns: 1fr; margin: 0; min-height: 100vh; padding: 40px 0; place-items: center; }
-        .slide-container { align-items: flex-start; background-color: #0c0f16; color: #f8fafc; display: flex; flex-direction: column; font-family: 'Noto Sans JP', sans-serif; height: 720px; justify-content: flex-start; overflow-y: auto; padding: 60px; position: relative; width: 1280px; border: 1px solid #d4af37; margin-bottom: 40px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        body { background-color: #1a202c; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 40px 0; }
+        .slide-container { background-color: #0c0f16; color: #f8fafc; display: flex; flex-direction: column; font-family: 'Noto Sans JP', sans-serif; height: 720px; width: 1280px; padding: 60px; position: relative; border: 1px solid #d4af37; margin-bottom: 50px; box-shadow: 0 20px 50px rgba(0,0,0,0.6); overflow: hidden; }
         h1, h2, h3 { color: #d4af37; font-family: 'Noto Serif JP', serif; margin: 0; }
         .slide-title { border-left: 6px solid #b22222; font-size: 44px; margin-bottom: 30px; padding-left: 20px; }
         p, li { font-size: 22px; line-height: 1.6; color: #cbd5e1; }
-        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; }
-        .image-wrapper { width: 100%; height: 400px; border: 1px solid #334155; overflow: hidden; background: #1a202c; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; height: 100%; }
+        .image-wrapper { width: 100%; height: 450px; border: 1px solid #334155; overflow: hidden; background: #000; }
         .image-wrapper img { width: 100%; height: 100%; object-fit: contain; }
         .highlight { color: #d4af37; font-weight: bold; }
     </style>
@@ -24,20 +24,38 @@
 <body>
 
 <div class="slide-container">
-    <div style="text-align: center; width: 100%; margin-top: 150px;">
-        <h1 style="font-size: 80px;">英仏百年戦争</h1>
-        <p style="font-size: 32px; color: #94a3b8; margin-top: 20px;">国民国家の誕生：騎士道の終焉と近代への胎動</p>
+    <div style="text-align: center; width: 100%; margin-top: 200px;">
+        <h1 style="font-size: 85px;">英仏百年戦争</h1>
+        <p style="font-size: 32px; color: #94a3b8;">国民国家の誕生：騎士道の終焉と近代への胎動</p>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">116年間に及ぶ死闘 (1337-1453)</h2>
+    <div class="two-column">
+        <div>
+            <h3>主要な争点</h3>
+            <ul>
+                <li><span class="highlight">王位継承:</span> カペー家断絶とエドワード3世の主張</li>
+                <li><span class="highlight">領土:</span> アキテーヌ地方の領有権争い</li>
+                <li><span class="highlight">経済:</span> フランドルの毛織物利権</li>
+            </ul>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; border: 2px solid #d4af37; padding:20px; background:rgba(212,175,55,0.05);">
+            <span style="font-size: 100px; color:#d4af37;">116</span>
+            <span style="font-size: 30px;">Years of War</span>
+        </div>
     </div>
 </div>
 
 <div class="slide-container">
     <h2 class="slide-title">軍事革命：クレシーの戦い (1346)</h2>
     <div class="two-column">
-        <div>
-            <p>イングランドの長弓隊が、フランスの重装騎士団を圧倒。歩兵が騎士を倒す時代の到来を告げた戦い。</p>
-        </div>
         <div class="image-wrapper">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Battle_of_crecy_froissart.jpg/640px-Battle_of_crecy_froissart.jpg" alt="Battle of Crecy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Battle_of_crecy_froissart.jpg/800px-Battle_of_crecy_froissart.jpg" alt="Battle of Crecy">
+        </div>
+        <div>
+            <p>イングランドの長弓兵が重装騎士を圧倒。中世の騎士道的な戦術から、集団兵器による近代戦への転換点となった。</p>
         </div>
     </div>
 </div>
@@ -45,11 +63,11 @@
 <div class="slide-container">
     <h2 class="slide-title">伝説の指揮官：エドワード黒太子</h2>
     <div class="two-column">
-        <div class="image-wrapper">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Edward_the_Black_Prince_1.jpg/439px-Edward_the_Black_Prince_1.jpg" alt="Black Prince">
-        </div>
         <div>
-            <p>ポワティエの戦い(1356)でフランス王を捕虜にする。戦術家としての才覚でイングランドを勝利へ導いた。</p>
+            <p>ポワティエの戦い(1356)でフランス王を捕虜にする。「シュボシー（騎行略奪）」により、フランスの経済基盤を組織的に破壊した。</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Edward_the_Black_Prince_1.jpg/500px-Edward_the_Black_Prince_1.jpg" alt="Black Prince">
         </div>
     </div>
 </div>
@@ -57,12 +75,54 @@
 <div class="slide-container">
     <h2 class="slide-title">救国の聖女：ジャンヌ・ダルク</h2>
     <div class="two-column">
+        <div class="image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Joan_of_arc_miniature_graded.jpg/500px-Joan_of_arc_miniature_graded.jpg" alt="Joan of Arc">
+        </div>
         <div>
-            <p>1429年、オルレアンを解放。絶望的な状況のフランス軍に「勝利の確信」と「国民の意識」を呼び起こした。</p>
+            <p>1429年、オルレアンを解放。敗北主義のフランス軍に「勝利への確信」と「国家意識」を注入し、シャルル7世を戴冠へ導いた。</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">中世の幕引き：火薬革命</h2>
+    <div class="two-column">
+        <div>
+            <p>戦争後半、フランス軍は大砲を組織的に運用。カスティヨンの戦い(1453)でイングランド軍を破り、戦争は終結した。</p>
         </div>
         <div class="image-wrapper">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Joan_of_arc_miniature_graded.jpg/436px-Joan_of_arc_miniature_graded.jpg" alt="Joan of Arc">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Battle_of_Castillon.jpg/800px-Battle_of_Castillon.jpg" alt="Battle of Castillon">
         </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">遺産：イングランドの変容</h2>
+    <ul>
+        <li>大陸領土をほぼ喪失し、島国としての自覚が強まる。</li>
+        <li>宮廷語がフランス語から<span class="highlight">英語</span>へと完全に移行。</li>
+        <li>薔薇戦争を経て、強力なチューダー朝の基盤となった。</li>
+    </ul>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">遺産：フランスの集権化</h2>
+    <ul>
+        <li>「フランス人」としての国民意識の芽生え。</li>
+        <li>常備軍の創設と課税制度の整備。</li>
+        <li>封建領主が没落し、<span class="highlight">絶対王政</span>への道が開かれた。</li>
+    </ul>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">騎士道の終焉と近代の胎動</h2>
+    <p>血統や身分ではなく、軍事技術と国家の財政力が勝敗を決める時代へ。中世封建社会はこの戦争を経て、近世主権国家へと姿を変えた。</p>
+</div>
+
+<div class="slide-container">
+    <div style="text-align: center; width: 100%; margin-top: 250px;">
+        <h2 style="font-size: 60px;">THE END</h2>
+        <p>英仏百年戦争：近代ヨーロッパの夜明け</p>
     </div>
 </div>
 
