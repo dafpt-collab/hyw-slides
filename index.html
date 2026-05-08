@@ -2,45 +2,109 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>英仏百年戦争：スライド</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英仏百年戦争：国民国家の誕生</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { background: #1a202c; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px; }
-        .slide { background: #0c0f16; width: 900px; padding: 40px; border: 2px solid #d4af37; margin-bottom: 40px; }
-        h1 { color: #d4af37; border-left: 5px solid #b22222; padding-left: 15px; }
-        .img-box { width: 100%; height: 300px; background: #2d3748; margin: 20px 0; display: flex; align-items: center; justify-content: center; font-size: 40px; border: 1px solid #d4af37; color: #d4af37; font-weight: bold; }
-        p { font-size: 20px; line-height: 1.6; }
-        .caption { color: #94a3b8; font-size: 16px; margin-top: -10px; margin-bottom: 20px; }
+        * { box-sizing: border-box; }
+        body { background-color: #f1f5f9; display: grid; gap: 40px; grid-template-columns: 1fr; margin: 0; min-height: 100vh; padding: 40px 0; place-items: center; }
+        .slide-container { background-color: #fff; border-radius: 4px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; font-family: 'Noto Sans JP', sans-serif; height: 720px; width: 1280px; padding: 60px; position: relative; overflow: hidden; }
+        .slide-container::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: linear-gradient(90deg, #1e293b 0%, #b8860b 100%); z-index: 5; }
+        h1, h2, h3 { color: #0f172a; font-family: 'Noto Serif JP', serif; margin: 0; }
+        .slide-title { font-size: 36px; font-weight: 700; margin-bottom: 40px; border-bottom: 2px solid #b8860b; padding-bottom: 10px; width: 100%; text-align: left; }
+        p, li, td { color: #334155; font-size: 20px; line-height: 1.6; }
+        .highlight { color: #b22222; font-weight: bold; }
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .tiled-content { display: flex; gap: 30px; width: 100%; }
+        .tile { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 30px; flex: 1; text-align: center; }
+        .tile i { color: #b8860b; font-size: 40px; margin-bottom: 20px; }
+        .image-wrapper { border: 1px solid #cbd5e1; height: 400px; overflow: hidden; background: #fff; padding: 5px; }
+        .image-wrapper img { height: 100%; width: 100%; object-fit: contain; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background-color: #1e293b; color: white; padding: 15px; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
 
-<div class="slide">
-    <h1>英仏百年戦争</h1>
-    <p style="text-align:center; font-size:24px;">国民国家の誕生：中世の終焉</p>
+<div class="slide-container" style="background-color: #1e293b; color: white; text-align: center; justify-content: center;">
+    <h1 style="font-size: 80px; color: #fff;">英仏百年戦争</h1>
+    <p style="font-size: 32px; color: #b8860b; margin-top: 20px;">国民国家の誕生：中世の終焉と近代の胎動</p>
+    <div style="width: 100px; height: 3px; background: #b8860b; margin: 40px auto;"></div>
+    <p style="color: #94a3b8;">1337 - 1453 | 116年の死闘</p>
 </div>
 
-<div class="slide">
-    <h1>1. クレシーの戦い (1346)</h1>
-    <img src="https://placehold.jp/40/d4af37/ffffff/800x400.png?text=Battle%20of%20Crecy%0A(Longbow%20Victory)" style="width:100%; border:1px solid #d4af37;">
-    <p>イングランドの長弓兵が重装騎士を圧倒。軍事革命の始まりとなった戦いです。</p>
+<div class="slide-container">
+    <h2 class="slide-title">1. 開戦の背景</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile"><i class="fa-solid fa-crown"></i><h3>王位継承</h3><p>エドワード3世による王位主張。</p></div>
+            <div class="tile"><i class="fa-solid fa-map"></i><h3>領土問題</h3><p>アキテーヌ地方の支配権争い。</p></div>
+            <div class="tile"><i class="fa-solid fa-coins"></i><h3>経済利権</h3><p>フランドルの毛織物産業。</p></div>
+        </div>
+    </div>
 </div>
 
-<div class="slide">
-    <h1>2. エドワード黒太子</h1>
-    <img src="https://placehold.jp/40/d4af37/ffffff/800x400.png?text=Edward%20the%20Black%20Prince" style="width:100%; border:1px solid #d4af37;">
-    <p>ポワティエの戦いでフランス王を捕虜にするなど、イングランドを勝利へ導きました。</p>
+<div class="slide-container">
+    <h2 class="slide-title">2. クレシーの戦い (1346)</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div><p>イングランドの<span class="highlight">長弓</span>が騎士団を圧倒。軍事革命の始まりです。</p></div>
+            <div class="image-wrapper"><img src="crecy.jpg"></div>
+        </div>
+    </div>
 </div>
 
-<div class="slide">
-    <h1>3. 救国の聖女ジャンヌ・ダルク</h1>
-    <img src="https://placehold.jp/40/d4af37/ffffff/800x400.png?text=Joan%20of%20Arc%0A(Saint%20of%20France)" style="width:100%; border:1px solid #d4af37;">
-    <p>1429年、オルレアンを解放。フランス軍に勝利の確信と国家意識を与えました。</p>
+<div class="slide-container">
+    <h2 class="slide-title">3. エドワード黒太子</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div style="text-align: center;"><img src="black-prince.jpg" style="border-radius: 50%; width: 300px; height: 300px; object-fit: cover; border: 5px solid #b8860b;"></div>
+            <div><h3>戦術の天才</h3><p>ポワティエの戦い(1356)で勝利。フランス経済を破壊しました。</p></div>
+        </div>
+    </div>
 </div>
 
-<div class="slide">
-    <h1>4. カスティヨンの戦い (1453)</h1>
-    <img src="https://placehold.jp/40/d4af37/ffffff/800x400.png?text=Battle%20of%20Castillon%0A(End%20of%20War)" style="width:100%; border:1px solid #d4af37;">
-    <p>大砲の運用によりフランスが勝利。これにより百年戦争は終結しました。</p>
+<div class="slide-container">
+    <h2 class="slide-title">4. 救国の聖女：ジャンヌ・ダルク</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-wrapper"><img src="joan.jpg"></div>
+            <div><p>1429年、オルレアンを解放。フランス人に「国家意識」を呼び起こしました。</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">5. カスティヨンの戦い (1453)</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div><p>フランス軍の<span class="highlight">大砲</span>が勝利を決定づけ、戦争は終結しました。</p></div>
+            <div class="image-wrapper"><img src="castillon.jpg"></div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <h2 class="slide-title">6. 戦後の変化</h2>
+    <div class="content-area">
+        <table>
+            <thead><tr><th>項目</th><th>イングランド</th><th>フランス</th></tr></thead>
+            <tbody>
+                <tr><td>国家意識</td><td>島国としての自覚</td><td>強い国民的団結</td></tr>
+                <tr><td>政治体制</td><td>議会の強化</td><td>絶対王政への道</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="slide-container" style="background-color: #1e293b; color: white; text-align: center; justify-content: center;">
+    <h2>ご清聴ありがとうございました</h2>
+    <p style="color: #b8860b; font-size: 24px; margin-top: 20px;">Questions & Answers</p>
 </div>
 
 </body>
