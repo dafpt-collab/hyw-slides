@@ -10,7 +10,7 @@
 
 ## Slides
 
-https://あなたのURL.github.io/hyw-slides/
+https://github.com/dafpt-collab/hyw-slides
 
 ## Notes
 
